@@ -1,0 +1,146 @@
+
+.start-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.hero p {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.hero button {
+    font-size: 1.5rem;
+    width: 12em;
+    padding: 0.75em 1.5em;
+}
+
+.leaderboard {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leaderboard-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboard-login label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboard h2 {
+    font-size: 2rem;
+}
+
+.leaderboard-login input {
+    font-size: 1.2rem;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 300px;
+    background: none;
+    color: #F5F7FB;
+    border: 3px solid #7ed0ef;
+    border-radius: 0.5rem;
+}
+
+.leaderboard-login button {
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+
+.leaderboard form {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard small {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    max-width: 65%;
+}
+
+.leaderboard-table {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaderboard-table table {
+    width: 300px;
+    border-collapse: collapse;
+    color: #f5f7fb;
+    font-size: 1rem;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 0.5em 0;
+    text-align: left;
+}
+
+.leaderboard-table th {
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+.leaderboard-table th:first-child,
+.leaderboard-table td:first-child {
+    width: 3rem;
+}
+
+.leaderboard-table th:last-child,
+.leaderboard-table td:last-child {
+    text-align: right;
+}
+
+.leaderboard-table tbody tr {
+    border-top: 2px solid #7ed0ef;
+}
+
+@media (max-width: 700px) {
+    .leaderboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .leaderboard-table {
+        margin-top: 3em;
+    }
+}
